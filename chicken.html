@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken</title>
+    <style>
+        video {
+            display: block;
+            border: none;
+            outline: none;
+            box-shadow: none;
+            object-fit: cover;
+            width: 66vw;
+            height: 66vh;
+        }
+
+        html, body {
+            font-family: Arial, sans-serif;
+        }
+
+        button {
+            background-color: #bebebe;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 9999px;
+            cursor: pointer;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1>Chicken</h1>
+    <video width="50px" height="50px" playsinline>
+        <source src="chicken.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <br>
+    <button onclick="playVideo()">Chicken</button>
+    </center>
+    <script>
+        function playVideo() {
+            const video = document.querySelector('video');
+            video.play();
+        }
+    </script>
+</body>
+</html>
